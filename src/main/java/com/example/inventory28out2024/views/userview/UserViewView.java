@@ -170,13 +170,20 @@ public class UserViewView extends Div implements BeforeEnterObserver {
 
         FormLayout formLayout = new FormLayout();
         firstName = new TextField("First Name");
+        firstName.setReadOnly(true);
         lastName = new TextField("Last Name");
+        lastName.setReadOnly(true);
         email = new TextField("Email");
+        email.setReadOnly(true);
         phone = new TextField("Phone");
+        phone.setReadOnly(true);
         dateOfBirth = new DatePicker("Date Of Birth");
+        dateOfBirth.setReadOnly(true);
         occupation = new TextField("Occupation");
         role = new TextField("Role");
+        role.setReadOnly(true);
         important = new Checkbox("Important");
+        important.setReadOnly(true);
         formLayout.add(firstName, lastName, email, phone, dateOfBirth, occupation, role, important);
 
         editorDiv.add(formLayout);
